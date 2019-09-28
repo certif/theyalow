@@ -1,15 +1,22 @@
-header {
-   background-image: url("assets/img/bg_header.png");
+
+/*--HEADER--*/
+.bg-header {
+   background-image: url("assets/img/bg-header.jpg");
+   width: 100%;
    height: 566px;
    background-size: cover;
-   
-   
+
+}
+.header-logo-nav {
+   position: absolute;
+
 }
 
-.c-header {
+.logo-nav {
    display: flex;
+   flex-direction: row;
    justify-content: space-between;
-   width: 1300px;
+   width: 1020px;
    margin: 0 auto;
    padding-top: 20px;
 }
@@ -20,46 +27,145 @@ header {
 
 .top-nav {
    display: flex;
-   align-content: space-between;
    align-self: flex-end;
    width: 453px;
    height: 41px;
-   background-color: #f5c506;
 }
 
 .nav-items {
    display: flex;
-}
-
-.top-nav-item {
+   flex-direction: row;
    justify-content: space-around;
+   align-items: center;
+   box-sizing: border-box;
+   list-style: none;
+   width: 453px;
+   height: 41px;
+   background-color: #f5c506;
+   box-shadow: -5px -5px 0 rgba(245,197,6,0.5), -10px -10px 0 rgba(245,197,6,0.25);
+   
 }
 
+.first-nav-item {
+   background: url("assets/img/about-us.svg") no-repeat;
+   padding-left: 20px; 
+   margin-left: 10px;
+   flex-grow: 1;
+}
 
+.second-nav-item {
+   background: url("assets/img/services.svg") no-repeat;
+   padding-left: 30px;
+   border-left: 1px solid #b99403;
+   border-right: 1px solid #b99403; 
+   flex-grow: 1
+}
 
-.banner {
+.third-nav-item {
+   background: url("assets/img/contacts.svg") no-repeat;
+   padding-left: 30px; 
+   flex-grow: 1
+}
+
+.nav-items li a {
+   display: block;
+   font-size: 1.1em;
+   color: #9b7d08;
+   font-family: "Segoe WP";
+   text-align: center;
+   text-decoration: none;
+}
+
+.top-nav ul li a:hover {
+	color: #fff;
+}
+
+.first-nav-a {
+
+}
+
+.main-video-container {
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row;
+   align-items: stretch;
    position: absolute;
-   z-index: 1;
+   width: 1020px;
+   top: 168px;
 }
 
-.columns {
-   background-image: url("assets/img/bg_white.png");
+.main-video {
+  
+}
+
+.main-text {
+font-family: "Asap";
+text-align: center;
+font-weight: 400;
+font-size: 3.5em;
+letter-spacing: 1px;
+}
+
+.m-text-yellow{
+   color: #f5c506;  
+}
+
+.m-text-white {
+   color: #fff;
+}
+
+/*--WHITE--*/
+.bg-columns-white {
+   background-image: url("assets/img/bg-white.jpg");
    background-size: cover;
+   height: 212px;
+   box-shadow: 0 15px 15px -15px #333 , 0 -15px 15px -15px #333;
+}
+
+.container {
+   width: 1020px;
+   margin: auto;
+}
+
+.columns-white {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
    height: 212px;
 }
 
-.slider {
+.first-column {
+
+
+}
+.second-column {
+
+   border-left: 1px solid #ccc;
+   border-right: 1px solid #ccc;
+}
+
+.third-column {
+
+
+}
+
+/*--SLIDER--*/
+.bg-slider-yellow {
    background-image: url("assets/img/bg_yellow.png");
    background-size: cover;
    height: 509px;
 }
 
-.bottom {
+/*--BOTTOM--*/
+.bg-bottom-grey {
    background-image: url("assets/img/bg_bottom.png");
    background-size: cover;
    height: 499px;
 }
 
-footer {
-   height: 64px;
+/*--FOOTER--*/
+.bg-footer-grey {
+   background: #4c4c4c;
+   height: 66px;
+   box-shadow: -0.105px -2.998px 5px rgba(0,0,0,0.75);
 }
